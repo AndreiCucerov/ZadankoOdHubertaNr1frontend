@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+<form action="#" method="post" th:action="@{/cars/deleting}">
+<label>
+    Wpisz Id samochoda ktorego chcesz usunąć
+    <input type="text" placeholder="1" name="id">
+  </label>
+    <button type="submit">Delete</button>
+</form>
+<a th:href="@{/cars}">Back</a>
+</body>
+</html>

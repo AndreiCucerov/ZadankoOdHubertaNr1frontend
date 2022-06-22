@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+</head>
+<body>
+<form action="#" method="post" th:action="@{/cars/saving}" th:object="${car}" >
+        <label>
+            Producer
+            <input type="text" placeholder="BMW" th:field="*{producer}">
+        </label>
+
+
+        <label>
+            Color
+            <input type="text" placeholder="czarny" th:field="*{color}">
+        </label>
+
+        <label>
+            Owner
+            <input type="text" placeholder="ja" th:field="*{owner}">
+        </label>
+        <button type="submit">Add</button>
+    </form>
+    <a th:href="@{/cars}">Back</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<body>
+<form action="#" method="post" th:action="@{/cars/update}" th:object="${car}">
+    <label>
+        Wpisz Id samochoda ktorego chcesz modyfikowac
+        <input type="text" placeholder="1" th:field="*{id}">
+    </label>
+    </br>
+    <label>
+        Wpisz nowego wlasciciela
+        <input type="text" placeholder="ja" th:field="*{owner}">
+    </label>
+    <button type="submit">Update</button>
+</form>
+<a th:href="@{/cars}">Back</a>
+</body>
+</body>
+</html>

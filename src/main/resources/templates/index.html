@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>glowna</title>
+</head>
+<body>
+<h1>Strona glowna "Aplikacja samochodowa"</h1>
+
+
+<a th:href="@{cars/save}">Dodaj</a></br>
+<a th:href="@{/cars/showAll}">Pokaz kolekcje</a></br>
+<a th:href="@{/cars/get}">Pokaz samochod</a></br>
+<a th:href="@{/cars/save}">Dodac nowy samochod</a></br>
+<a th:href="@{/cars/delete}">Usunac</a></br>
+<a th:href="@{/cars/update}">Modyfikowac</a></br>
+<a th:href="@{/cars/searchByProducer}">Wyszukaj po nazwie producenta</a>
+
+
+</body>
+</html>
